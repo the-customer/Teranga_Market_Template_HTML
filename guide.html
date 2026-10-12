@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Guide d’intégration pour les étudiants — maquette pédagogique Teranga Market, HTML et CSS sans JavaScript." name="description"/>
+  <title>
+   Guide d’intégration pour les étudiants | Teranga Market
+  </title>
+  <link href="assets/logo.svg" rel="icon" type="image/svg+xml"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+  <link href="assets/css/template.css" rel="stylesheet"/>
+ </head>
+ <body data-page="guide.html" id="page-top">
+  <!--
+ TERANGA MARKET — TEMPLATE ÉTUDIANT — M. Aly Tall Niang
+ Demandes associées : 01 à 24
+ Aucune bibliothèque et aucun JavaScript n'est chargé.
+ Les liens servent à visiter les maquettes. Les boutons data-action restent à programmer.
+ Les commentaires DEMANDE et data-component indiquent les futurs composants Vue.
+-->
+  <!-- DEMANDE 01 / 06 / 11 — À PROGRAMMER : Extraire AppHeader dans le layout. Remplacer les liens HTML par la navigation Vue Router. -->
+  <a class="skip-link" href="#main-content">
+   Aller au contenu
+  </a>
+  <div class="topbar">
+   Le marché du quartier, à votre rythme.
+   <span>
+    Castors · Dakar · Démonstration
+   </span>
+  </div>
+  <header class="site-header" data-component="AppHeader">
+   <div class="container header-inner">
+    <a aria-label="Teranga Market — Accueil" class="brand" href="index.html">
+     <img alt="" height="42" src="assets/logo.svg" width="42"/>
+     <span>
+      teranga
+      <b>
+       market.
+      </b>
+     </span>
+    </a>
+    <nav aria-label="Navigation principale">
+     <a href="boutique.html">
+      Le marché
+     </a>
+     <a href="suivre.html">
+      Suivre ma commande
+     </a>
+     <a href="admin/index.html">
+      Espace Awa
+     </a>
+    </nav>
+    <div class="header-actions">
+     <a aria-label="Aperçu de la recherche" class="icon-button" href="#recherche-apercu">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0">
+       </path>
+      </svg>
+     </a>
+     <a aria-label="Voir la variante de thème" class="icon-button" href="exemples/theme-sombre.html">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M21 13A9 9 0 0 1 11 3a9 9 0 1 0 10 10Z">
+       </path>
+      </svg>
+     </a>
+     <a aria-label="Aperçu du panier, 4 unités" class="btn small-btn" href="#panier-apercu">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M6 7h12l2 14H4L6 7Zm3 0V5a3 3 0 0 1 6 0v2">
+       </path>
+      </svg>
+      <span>
+       Mon panier
+      </span>
+      <b class="cart-count">
+       4
+      </b>
+     </a>
+    </div>
+   </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+   <div class="container page-space guide-page">
+    <nav aria-label="Fil d’Ariane" class="breadcrumbs">
+     <a href="index.html">
+      Accueil
+     </a>
+     <svg aria-hidden="true" class="icon" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="12">
+      <path d="m9 5 7 7-7 7">
+      </path>
+     </svg>
+     <span aria-current="page">
+      Guide étudiant
+     </span>
+    </nav>
+    <section class="guide-hero">
+     <p class="overline">
+      M. ALY TALL NIANG · PARCOURS VUE 3
+     </p>
+     <h1>
+      Le design est prêt.
+      <br/>
+      <em>
+       À vous de lui donner vie.
+      </em>
+     </h1>
+     <p>
+      Vous disposez d’une maquette complète en HTML et CSS. Votre mission : transformer les écrans en une application Vue conforme aux 24 demandes de la cliente.
+     </p>
+     <div class="button-row">
+      <a class="btn" href="sommaire.html">
+       Explorer les écrans
+      </a>
+      <a class="btn secondary" href="index.html">
+       Ouvrir la boutique
+      </a>
+     </div>
+    </section>
+    <div class="info-grid mt">
+     <section class="panel">
+      <h2>
+       Ce qui est fourni
+      </h2>
+      <p>
+       Des pages statiques, un design responsive, les illustrations locales, les formulaires, les tableaux et leurs variantes d’état.
+      </p>
+      <p class="muted small">
+       Les liens HTML et les aperçus CSS permettent d’explorer le design sans installation.
+      </p>
+     </section>
+     <section class="panel">
+      <h2>
+       Ce qui est à programmer
+      </h2>
+      <p>
+       Réactivité, événements, validation, filtres, calculs, stores, composants, routage, appels API et persistance.
+      </p>
+      <p class="muted small">
+       Aucun code métier JavaScript, aucune connexion API et aucun serveur ne sont fournis dans ce template.
+      </p>
+     </section>
+    </div>
+    <section class="panel mt">
+     <h2>
+      Comment utiliser les fichiers
+     </h2>
+     <ol class="guide-steps">
+      <li>
+       <strong>
+        Décompressez toute l’archive.
+       </strong>
+       Ouvrez index.html ou sommaire.html dans le navigateur. Ne déplacez pas une page seule : ses styles et images sont relatifs.
+      </li>
+      <li>
+       <strong>
+        Étudiez le découpage.
+       </strong>
+       Les commentaires DEMANDE et les attributs data-component indiquent les responsabilités à extraire.
+      </li>
+      <li>
+       <strong>
+        Créez vos composants Vue.
+       </strong>
+       Copiez le balisage utile dans le template d’un composant. Ne recopiez pas doctype, html, head et body dans chaque composant.
+      </li>
+      <li>
+       <strong>
+        Centralisez les ressources.
+       </strong>
+       Intégrez les deux feuilles CSS dans le projet Vue. Placez les images dans un emplacement public adapté et ajustez les chemins.
+      </li>
+      <li>
+       <strong>
+        Remplacez les liens de maquette.
+       </strong>
+       Les liens entre fichiers deviennent des routes. Les boutons data-action reçoivent vos événements.
+      </li>
+      <li>
+       <strong>
+        Remplacez les constantes par des données.
+       </strong>
+       Les cartes répétées deviennent des listes, les montants des propriétés calculées et les variantes des conditions.
+      </li>
+      <li>
+       <strong>
+        Connectez le backend simulé.
+       </strong>
+       Construisez votre fichier JSON Server à partir du cahier des charges. Le HTML n’est pas une base de données.
+      </li>
+      <li>
+       <strong>
+        Testez les erreurs autant que le succès.
+       </strong>
+       API indisponible, panier vide, prix changé, stock insuffisant et formulaires invalides font partie du projet.
+      </li>
+     </ol>
+    </section>
+    <section class="panel mt">
+     <h2>
+      Les conventions du template
+     </h2>
+     <div class="guide-conventions">
+      <code>
+       data-component="ProductCard"
+      </code>
+      <p>
+       Nom proposé du futur composant ; il ne produit aucun comportement.
+      </p>
+      <code>
+       data-action="ajouter-panier"
+      </code>
+      <p>
+       Point de branchement d’une action JavaScript à écrire.
+      </p>
+      <code>
+       data-product-id="1"
+      </code>
+      <p>
+       Identifiant statique de démonstration, à remplacer par une donnée.
+      </p>
+      <code>
+       --brand / --surface / --ink
+      </code>
+      <p>
+       Variables CSS communes à toutes les pages.
+      </p>
+      <code>
+       data-theme="dark"
+      </code>
+      <p>
+       Variante sombre déjà dessinée. Le changement de thème et sa persistance restent à programmer.
+      </p>
+     </div>
+    </section>
+    <section class="panel mt">
+     <h2>
+      Important : maquette et application ne sont pas équivalentes
+     </h2>
+     <p>
+      Changer une quantité ou un champ ne met aucun total à jour. Les actions Ajouter, Appliquer, Enregistrer, Confirmer et Actualiser sont volontairement inactives.
+     </p>
+     <p>
+      Les liens vers une confirmation, une carte, un tableau ou un état d’erreur ouvrent des fichiers d’aperçu ; ils ne réalisent pas l’action métier. Les modales et le tiroir utilisent uniquement la cible CSS pour être visibles.
+     </p>
+     <p>
+      Les formulaires ont des boutons de type button et une validation native désactivée. À l’intégration, gérez leur soumission et leur validation avec Vue et VeeValidate. Le focus automatique, le piégeage du focus et la touche Échap ne sont pas implémentés.
+     </p>
+     <p class="notice">
+      L’administration n’est pas sécurisée. Les noms, coordonnées, prix et commandes sont fictifs. JSON Server reste un backend pédagogique, sans garanties transactionnelles de production.
+     </p>
+    </section>
+    <section class="mt">
+     <div class="section-heading">
+      <div>
+       <p class="overline">
+        VOTRE FEUILLE DE ROUTE
+       </p>
+       <h2>
+        Les 24 demandes, écran par écran
+       </h2>
+      </div>
+     </div>
+     <div class="demand-grid">
+      <article class="panel demand-card" id="demande-01">
+       <div class="demand-number">
+        01
+       </div>
+       <h3>
+        Une boutique qui représente mon commerce
+       </h3>
+       <p>
+        Lier le nom, les catégories et les images. Répéter les catégories et les produits mis en avant.
+       </p>
+       <small>
+        v-bind, attributs dynamiques, CSS, listes
+       </small>
+       <a class="text-button" href="index.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-02">
+       <div class="demand-number">
+        02
+       </div>
+       <h3>
+        Comprendre la disponibilité des produits
+       </h3>
+       <p>
+        Extraire ProductCard et les badges ; déclarer les props et leurs validateurs ; rendre les prix et stocks dynamiques.
+       </p>
+       <small>
+        Props, validateurs, computed, conditions
+       </small>
+       <a class="text-button" href="produits/02-oignons.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-03">
+       <div class="demand-number">
+        03
+       </div>
+       <h3>
+        Trouver rapidement le bon produit
+       </h3>
+       <p>
+        Relier les champs aux filtres ; combiner recherche, catégorie, disponibilité et tri ; calculer le nombre de résultats.
+       </p>
+       <small>
+        reactive, ref, computed, v-model
+       </small>
+       <a class="text-button" href="boutique.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-04">
+       <div class="demand-number">
+        04
+       </div>
+       <h3>
+        Une fiche détaillée par produit
+       </h3>
+       <p>
+        Lire l’identifiant de route ; charger le produit ; réagir à son changement ; afficher chargement et introuvable.
+       </p>
+       <small>
+        Vue Router, API, lifecycle, watch
+       </small>
+       <a class="text-button" href="produits/01-riz.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-05">
+       <div class="demand-number">
+        05
+       </div>
+       <h3>
+        Préparer son panier simplement
+       </h3>
+       <p>
+        Créer le store panier ; ajouter, fusionner et retirer les lignes ; contrôler les quantités et calculer les montants.
+       </p>
+       <small>
+        Pinia, événements, computed
+       </small>
+       <a class="text-button" href="panier.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-06">
+       <div class="demand-number">
+        06
+       </div>
+       <h3>
+        Un panier accessible partout
+       </h3>
+       <p>
+        Extraire BaseDrawer et CartContent ; piloter l’ouverture ; gérer le clavier et les événements de fermeture.
+       </p>
+       <small>
+        Slots, props, emits, ref
+       </small>
+       <a class="text-button" href="exemples/tiroir-panier.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-07">
+       <div class="demand-number">
+        07
+       </div>
+       <h3>
+        Récompenser les clients fidèles
+       </h3>
+       <p>
+        Vérifier les codes ; appliquer le meilleur avantage ; effacer les anciens messages au changement de saisie.
+       </p>
+       <small>
+        computed, watch, Pinia
+       </small>
+       <a class="text-button" href="panier.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-08">
+       <div class="demand-number">
+        08
+       </div>
+       <h3>
+        Connaître le client
+       </h3>
+       <p>
+        Valider les données avec useForm de VeeValidate ; empêcher les doubles envois ; conserver le formulaire en cas d’erreur.
+       </p>
+       <small>
+        Formulaires, useForm, API POST
+       </small>
+       <a class="text-button" href="commande.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-09">
+       <div class="demand-number">
+        09
+       </div>
+       <h3>
+        Des frais selon le quartier
+       </h3>
+       <p>
+        Charger les quartiers ; recalculer la livraison ; afficher ou retirer l’adresse selon le mode choisi.
+       </p>
+       <small>
+        API, v-model, computed, watch
+       </small>
+       <a class="text-button" href="commande-retrait.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-10">
+       <div class="demand-number">
+        10
+       </div>
+       <h3>
+        Confirmer et suivre la commande
+       </h3>
+       <p>
+        Créer la référence ; afficher la commande enregistrée ; rechercher et actualiser le suivi.
+       </p>
+       <small>
+        Vue Router, API, rendu conditionnel
+       </small>
+       <a class="text-button" href="suivi-commande.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-11">
+       <div class="demand-number">
+        11
+       </div>
+       <h3>
+        Un espace dédié à la gestion
+       </h3>
+       <p>
+        Construire PublicLayout et AdminLayout ; utiliser les routes imbriquées et les slots de PagePanel.
+       </p>
+       <small>
+        Layouts, slots avancés, RouterView
+       </small>
+       <a class="text-button" href="admin/index.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-12">
+       <div class="demand-number">
+        12
+       </div>
+       <h3>
+        Ajouter un produit
+       </h3>
+       <p>
+        Valider les champs ; afficher l’aperçu de l’image ; POST puis synchroniser la liste.
+       </p>
+       <small>
+        useForm, formulaires, API
+       </small>
+       <a class="text-button" href="admin/produit-ajouter.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-13">
+       <div class="demand-number">
+        13
+       </div>
+       <h3>
+        Corriger un produit
+       </h3>
+       <p>
+        Réutiliser ProductForm en modification ; copier les valeurs ; PATCH ; ne pas modifier la prop directement.
+       </p>
+       <small>
+        Props, watch, emits, API PATCH
+       </small>
+       <a class="text-button" href="admin/produits-modifier/01.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-14">
+       <div class="demand-number">
+        14
+       </div>
+       <h3>
+        Désactiver un produit
+       </h3>
+       <p>
+        Confirmer la désactivation ; PATCH ; exclure les inactifs de la boutique ; proposer la réactivation.
+       </p>
+       <small>
+        Événements, computed, conditions
+       </small>
+       <a class="text-button" href="admin/produits-inactifs.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-15">
+       <div class="demand-number">
+        15
+       </div>
+       <h3>
+        Choisir la présentation des commandes
+       </h3>
+       <p>
+        Transformer les deux présentations en composants dynamiques ; conserver la préférence.
+       </p>
+       <small>
+        Dynamic Components, Pinia, CSS
+       </small>
+       <a class="text-button" href="admin/commandes-cartes.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-16">
+       <div class="demand-number">
+        16
+       </div>
+       <h3>
+        Traiter les commandes
+       </h3>
+       <p>
+        Filtrer les statuts ; n’autoriser que les transitions prévues ; annuler avec restitution de stock.
+       </p>
+       <small>
+        API, Pinia, conditions, événements
+       </small>
+       <a class="text-button" href="admin/commandes/demo-001.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-17">
+       <div class="demand-number">
+        17
+       </div>
+       <h3>
+        Des notifications cohérentes
+       </h3>
+       <p>
+        Fournir le service avec provide et le consommer avec inject ; gérer fermeture et durée de vie.
+       </p>
+       <small>
+        Provide &amp; Inject, reactive, lifecycle
+       </small>
+       <a class="text-button" href="exemples/composants.html#notifications">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-18">
+       <div class="demand-number">
+        18
+       </div>
+       <h3>
+        Des champs prêts pour la saisie
+       </h3>
+       <p>
+        Créer v-focus ; utiliser une référence de template pour le premier champ invalide ; gérer le DOM après rendu.
+       </p>
+       <small>
+        Custom Directives, Template Refs, nextTick
+       </small>
+       <a class="text-button" href="exemples/recherche.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-19">
+       <div class="demand-number">
+        19
+       </div>
+       <h3>
+        Retrouver ses préférences
+       </h3>
+       <p>
+        Créer useTheme ; garder une source unique ; persister thème et modes avec un watcher.
+       </p>
+       <small>
+        Composables, watch, Pinia, CSS
+       </small>
+       <a class="text-button" href="admin/preferences.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-20">
+       <div class="demand-number">
+        20
+       </div>
+       <h3>
+        Charger seulement ce qui est utile
+       </h3>
+       <p>
+        Différer les routes admin et le composant StatisticsPanel ; prévoir un état de chargement et un état d’échec.
+       </p>
+       <small>
+        Async Components, imports dynamiques
+       </small>
+       <a class="text-button" href="exemples/module-chargement.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-21">
+       <div class="demand-number">
+        21
+       </div>
+       <h3>
+        Voir les indicateurs
+       </h3>
+       <p>
+        Calculer les cartes, les dernières commandes et les cinq produits les plus demandés.
+       </p>
+       <small>
+        computed, Pinia, API
+       </small>
+       <a class="text-button" href="admin/statistiques.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-22">
+       <div class="demand-number">
+        22
+       </div>
+       <h3>
+        Réutiliser les comportements
+       </h3>
+       <p>
+        Créer useFetch et useDebounce ; relancer les requêtes ; éviter les données dupliquées ; nettoyer les effets.
+       </p>
+       <small>
+        Composables, watchers, lifecycle
+       </small>
+       <a class="text-button" href="exemples/erreur-api.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-23">
+       <div class="demand-number">
+        23
+       </div>
+       <h3>
+        Des fenêtres réutilisables
+       </h3>
+       <p>
+        Créer BaseModal avec slots nommés et scoped slots ; props validées ; emits ; focus et état pending.
+       </p>
+       <small>
+        Slots avancés, emits, Template Refs
+       </small>
+       <a class="text-button" href="exemples/modales.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+      <article class="panel demand-card" id="demande-24">
+       <div class="demand-number">
+        24
+       </div>
+       <h3>
+        Une application cohérente
+       </h3>
+       <p>
+        Synchroniser les stores ; revérifier les prix et stocks ; bloquer les paniers invalides ; demander une nouvelle confirmation.
+       </p>
+       <small>
+        Pinia, API, Vue Router, computed
+       </small>
+       <a class="text-button" href="exemples/prix-modifie.html">
+        Voir l’écran de référence
+        <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+         <path d="M5 12h14m-5-5 5 5-5 5">
+         </path>
+        </svg>
+       </a>
+      </article>
+     </div>
+    </section>
+    <section class="panel mt">
+     <h2>
+      Avant de remettre votre application
+     </h2>
+     <p>
+      Vérifiez les 24 demandes, documentez les composants et les stores, testez le parcours client et le parcours commerçante, puis expliquez les limites du backend simulé.
+     </p>
+     <p class="muted small">
+      Les pages supplémentaires de ce template sont des variantes visuelles, pas des demandes métier supplémentaires.
+     </p>
+    </section>
+   </div>
+  </main>
+  <footer class="container site-footer" data-component="AppFooter">
+   <div>
+    <strong>
+     teranga
+     <span>
+      market.
+     </span>
+    </strong>
+    <p>
+     Une boutique de quartier. Toute la teranga.
+    </p>
+   </div>
+   <div class="footer-links">
+    <a href="sommaire.html">
+     Tous les écrans
+    </a>
+    <a href="guide.html">
+     Guide étudiant
+    </a>
+    <a href="exemples/composants.html">
+     Composants UI
+    </a>
+   </div>
+   <p>
+    Template HTML/CSS · Données fictives
+    <br/>
+    M. Aly Tall Niang · Projet Vue 3
+   </p>
+  </footer>
+  <!-- DEMANDE 06 — À PROGRAMMER : Extraire BaseDrawer : slots header/default/footer, prop open et événement close. Ce tiroir utilise uniquement la cible CSS. -->
+  <section aria-labelledby="drawer-title" class="static-overlay drawer-overlay" id="panier-apercu" role="dialog" tabindex="-1">
+   <a aria-label="Fermer le panier" class="overlay-dismiss" href="#page-top">
+   </a>
+   <div class="drawer-panel" data-component="BaseDrawer">
+    <header class="dialog-header">
+     <div>
+      <p class="overline">
+       VOTRE SÉLECTION
+      </p>
+      <h2 id="drawer-title">
+       Mon panier
+       <span class="small muted">
+        4 unités
+       </span>
+      </h2>
+     </div>
+     <a aria-label="Fermer le panier" class="icon-button" href="#page-top">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="m6 6 12 12M6 18 18 6">
+       </path>
+      </svg>
+     </a>
+    </header>
+    <div class="drawer-body">
+     <!-- DEMANDE 05 / 24 — À PROGRAMMER : Afficher les lignes du store panier ; boutons et quantités sans effet dans ce template. -->
+     <div class="cart-items">
+      <article class="cart-line" data-product-id="1">
+       <img alt="Riz brisé parfumé" height="70" src="assets/images/riz.svg" width="64"/>
+       <div class="cart-line-main">
+        <strong>
+         Riz brisé parfumé
+        </strong>
+        <small>
+         17 500 FCFA / sac de 25 kg
+        </small>
+        <div class="quantity" data-component="QuantityControl">
+         <button aria-label="Diminuer la quantité de Riz brisé parfumé" class="" data-action="diminuer-quantite" type="button">
+          −
+         </button>
+         <input aria-label="Quantité de Riz brisé parfumé" id="drawer-1" max="18" min="0" name="quantity" step="1" type="number" value="1"/>
+         <button aria-label="Augmenter la quantité de Riz brisé parfumé" class="" data-action="augmenter-quantite" type="button">
+          +
+         </button>
+        </div>
+       </div>
+       <div class="cart-line-end">
+        <button aria-label="Retirer Riz brisé parfumé" class="icon-button" data-action="retirer-produit" type="button">
+         <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+          <path d="m6 6 12 12M6 18 18 6">
+          </path>
+         </svg>
+        </button>
+        <strong>
+         17 500 FCFA
+        </strong>
+       </div>
+      </article>
+      <article class="cart-line" data-product-id="2">
+       <img alt="Oignons de Potou" height="70" src="assets/images/oignons.svg" width="64"/>
+       <div class="cart-line-main">
+        <strong>
+         Oignons de Potou
+        </strong>
+        <small>
+         700 FCFA / kg
+        </small>
+        <div class="quantity" data-component="QuantityControl">
+         <button aria-label="Diminuer la quantité de Oignons de Potou" class="" data-action="diminuer-quantite" type="button">
+          −
+         </button>
+         <input aria-label="Quantité de Oignons de Potou" id="drawer-2" max="4" min="0" name="quantity" step="1" type="number" value="2"/>
+         <button aria-label="Augmenter la quantité de Oignons de Potou" class="" data-action="augmenter-quantite" type="button">
+          +
+         </button>
+        </div>
+       </div>
+       <div class="cart-line-end">
+        <button aria-label="Retirer Oignons de Potou" class="icon-button" data-action="retirer-produit" type="button">
+         <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+          <path d="m6 6 12 12M6 18 18 6">
+          </path>
+         </svg>
+        </button>
+        <strong>
+         1 400 FCFA
+        </strong>
+       </div>
+      </article>
+      <article class="cart-line" data-product-id="17">
+       <img alt="Bissap séché" height="70" src="assets/images/bissap.svg" width="64"/>
+       <div class="cart-line-main">
+        <strong>
+         Bissap séché
+        </strong>
+        <small>
+         1 200 FCFA / sachet de 250 g
+        </small>
+        <div class="quantity" data-component="QuantityControl">
+         <button aria-label="Diminuer la quantité de Bissap séché" class="" data-action="diminuer-quantite" type="button">
+          −
+         </button>
+         <input aria-label="Quantité de Bissap séché" id="drawer-17" max="22" min="0" name="quantity" step="1" type="number" value="1"/>
+         <button aria-label="Augmenter la quantité de Bissap séché" class="" data-action="augmenter-quantite" type="button">
+          +
+         </button>
+        </div>
+       </div>
+       <div class="cart-line-end">
+        <button aria-label="Retirer Bissap séché" class="icon-button" data-action="retirer-produit" type="button">
+         <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+          <path d="m6 6 12 12M6 18 18 6">
+          </path>
+         </svg>
+        </button>
+        <strong>
+         1 200 FCFA
+        </strong>
+       </div>
+      </article>
+     </div>
+     <!-- DEMANDE 07 — À PROGRAMMER : Vérifier le code, son activité et son expiration ; ne pas cumuler fidélité et code. -->
+     <div class="promo-box" data-component="PromoCode">
+      <label for="drawer-promo-code">
+       Un petit avantage pour votre marché ?
+      </label>
+      <div class="input-action">
+       <input aria-describedby="drawer-promo-message" id="drawer-promo-code" name="promoCode" placeholder="Votre code promo" value="TERANGA10"/>
+       <button class="btn small-btn" data-action="appliquer-code" type="button">
+        Appliquer
+       </button>
+      </div>
+      <p class="code-success" id="drawer-promo-message">
+       <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+        <path d="m5 12 4 4L19 6">
+        </path>
+       </svg>
+       Code TERANGA10 appliqué : −10 %.
+      </p>
+      <small>
+       La meilleure remise est retenue. Les réductions ne se cumulent pas.
+      </small>
+     </div>
+     <!-- DEMANDE 05 / 07 / 09 — À PROGRAMMER : Remplacer ces montants fixes par des propriétés calculées, arrondies au FCFA. -->
+     <div class="totals" data-component="Totals">
+      <div>
+       <span>
+        Sous-total
+       </span>
+       <strong>
+        20 100 FCFA
+       </strong>
+      </div>
+      <div>
+       <span>
+        Réduction (10 %)
+       </span>
+       <strong class="success-text">
+        −2 010 FCFA
+       </strong>
+      </div>
+      <div class="total-row">
+       <span>
+        Total hors livraison
+       </span>
+       <strong>
+        18 090 FCFA
+       </strong>
+      </div>
+     </div>
+     <a class="text-button" href="panier.html">
+      Voir le panier en pleine page
+     </a>
+    </div>
+    <footer class="dialog-footer">
+     <a class="btn full" href="commande.html">
+      Passer ma commande
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M5 12h14m-5-5 5 5-5 5">
+       </path>
+      </svg>
+     </a>
+    </footer>
+   </div>
+  </section>
+  <!-- DEMANDE 18 — À PROGRAMMER : Extraire SearchDialog ; ouvrir/fermer avec Vue et appliquer v-focus après rendu. -->
+  <section aria-labelledby="search-dialog-title" class="static-overlay modal-overlay" id="recherche-apercu" role="dialog" tabindex="-1">
+   <a aria-label="Fermer la recherche" class="overlay-dismiss" href="#page-top">
+   </a>
+   <div class="modal-window search-dialog" data-component="SearchDialog">
+    <header class="dialog-header">
+     <h2 id="search-dialog-title">
+      Une envie particulière ?
+     </h2>
+     <a aria-label="Fermer" class="icon-button" href="#page-top">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="m6 6 12 12M6 18 18 6">
+       </path>
+      </svg>
+     </a>
+    </header>
+    <div class="modal-body">
+     <label class="field" for="quick-search">
+      Rechercher un produit
+     </label>
+     <div class="input-action mt">
+      <input data-focus-target="search" id="quick-search" placeholder="Riz, bissap, légumes…" type="search"/>
+      <button class="btn" data-action="rechercher-produit" type="button">
+       <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+        <path d="m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0">
+        </path>
+       </svg>
+       Rechercher
+      </button>
+     </div>
+     <p class="muted small mt">
+      Le focus automatique et la recherche sont à programmer.
+     </p>
+     <div class="suggestions">
+      <a class="chip" href="categories/cereales.html">
+       Céréales
+      </a>
+      <a class="chip" href="categories/legumes.html">
+       Légumes
+      </a>
+      <a class="chip" href="categories/saveurs-locales.html">
+       Saveurs locales
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+ </body>
+</html>

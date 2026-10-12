@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Plan des écrans — maquette pédagogique Teranga Market, HTML et CSS sans JavaScript." name="description"/>
+  <title>
+   Plan des écrans | Teranga Market
+  </title>
+  <link href="assets/logo.svg" rel="icon" type="image/svg+xml"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+  <link href="assets/css/template.css" rel="stylesheet"/>
+ </head>
+ <body data-page="sommaire.html" id="page-top">
+  <!--
+ TERANGA MARKET — TEMPLATE ÉTUDIANT — M. Aly Tall Niang
+ Demandes associées : 01 à 24
+ Aucune bibliothèque et aucun JavaScript n'est chargé.
+ Les liens servent à visiter les maquettes. Les boutons data-action restent à programmer.
+ Les commentaires DEMANDE et data-component indiquent les futurs composants Vue.
+-->
+  <!-- DEMANDE 01 / 06 / 11 — À PROGRAMMER : Extraire AppHeader dans le layout. Remplacer les liens HTML par la navigation Vue Router. -->
+  <a class="skip-link" href="#main-content">
+   Aller au contenu
+  </a>
+  <div class="topbar">
+   Le marché du quartier, à votre rythme.
+   <span>
+    Castors · Dakar · Démonstration
+   </span>
+  </div>
+  <header class="site-header" data-component="AppHeader">
+   <div class="container header-inner">
+    <a aria-label="Teranga Market — Accueil" class="brand" href="index.html">
+     <img alt="" height="42" src="assets/logo.svg" width="42"/>
+     <span>
+      teranga
+      <b>
+       market.
+      </b>
+     </span>
+    </a>
+    <nav aria-label="Navigation principale">
+     <a href="boutique.html">
+      Le marché
+     </a>
+     <a href="suivre.html">
+      Suivre ma commande
+     </a>
+     <a href="admin/index.html">
+      Espace Awa
+     </a>
+    </nav>
+    <div class="header-actions">
+     <a aria-label="Aperçu de la recherche" class="icon-button" href="#recherche-apercu">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0">
+       </path>
+      </svg>
+     </a>
+     <a aria-label="Voir la variante de thème" class="icon-button" href="exemples/theme-sombre.html">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M21 13A9 9 0 0 1 11 3a9 9 0 1 0 10 10Z">
+       </path>
+      </svg>
+     </a>
+     <a aria-label="Aperçu du panier, 4 unités" class="btn small-btn" href="#panier-apercu">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M6 7h12l2 14H4L6 7Zm3 0V5a3 3 0 0 1 6 0v2">
+       </path>
+      </svg>
+      <span>
+       Mon panier
+      </span>
+      <b class="cart-count">
+       4
+      </b>
+     </a>
+    </div>
+   </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+   <div class="container page-space">
+    <header class="page-title">
+     <div>
+      <p class="overline">
+       TERANGA MARKET · TEMPLATE ÉTUDIANT
+      </p>
+      <h1>
+       Tous les écrans du projet.
+      </h1>
+      <p class="muted">
+       Une base HTML/CSS complète, à transformer en application Vue.
+      </p>
+     </div>
+     <div class="page-actions">
+      <a class="btn" href="guide.html">
+       Guide d’intégration
+       <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+     </div>
+    </header>
+    <div class="overview-strip">
+     <div>
+      <strong>
+       24
+      </strong>
+      <span>
+       demandes à réaliser
+      </span>
+     </div>
+     <div>
+      <strong>
+       0
+      </strong>
+      <span>
+       JavaScript fourni
+      </span>
+     </div>
+     <div>
+      <strong>
+       100 %
+      </strong>
+      <span>
+       ressources locales
+      </span>
+     </div>
+    </div>
+    <section class="mt">
+     <div class="section-heading">
+      <div>
+       <p class="overline">
+        PARCOURS 01
+       </p>
+       <h2>
+        La boutique
+       </h2>
+      </div>
+      <span class="small muted">
+       6 écrans de référence
+      </span>
+     </div>
+     <div class="screen-grid">
+      <a class="screen-link" href="index.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Accueil, catégories et sélection du moment
+        </strong>
+        <small>
+         index.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="boutique.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Catalogue complet en grille
+        </strong>
+        <small>
+         boutique.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="boutique-liste.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Le même catalogue en liste
+        </strong>
+        <small>
+         boutique-liste.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="produits/01-riz.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Fiche produit disponible
+        </strong>
+        <small>
+         produits/01-riz.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="produits/02-oignons.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Fiche en promotion et stock faible
+        </strong>
+        <small>
+         produits/02-oignons.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="produits/08-gombo.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Fiche produit en rupture
+        </strong>
+        <small>
+         produits/08-gombo.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+     </div>
+    </section>
+    <section class="mt">
+     <div class="section-heading">
+      <div>
+       <p class="overline">
+        PARCOURS 02
+       </p>
+       <h2>
+        Le parcours client
+       </h2>
+      </div>
+      <span class="small muted">
+       6 écrans de référence
+      </span>
+     </div>
+     <div class="screen-grid">
+      <a class="screen-link" href="panier.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Panier, quantités et réduction
+        </strong>
+        <small>
+         panier.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="commande.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Coordonnées et livraison
+        </strong>
+        <small>
+         commande.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="commande-retrait.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Variante retrait en boutique
+        </strong>
+        <small>
+         commande-retrait.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="confirmation.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Confirmation de démonstration
+        </strong>
+        <small>
+         confirmation.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="suivre.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Recherche d’une référence
+        </strong>
+        <small>
+         suivre.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="suivi-commande.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Suivi avec étapes
+        </strong>
+        <small>
+         suivi-commande.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+     </div>
+    </section>
+    <section class="mt">
+     <div class="section-heading">
+      <div>
+       <p class="overline">
+        PARCOURS 03
+       </p>
+       <h2>
+        L’espace Awa
+       </h2>
+      </div>
+      <span class="small muted">
+       10 écrans de référence
+      </span>
+     </div>
+     <div class="screen-grid">
+      <a class="screen-link" href="admin/index.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Vue d’ensemble et indicateurs
+        </strong>
+        <small>
+         admin/index.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="admin/produits.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Les 20 produits en administration
+        </strong>
+        <small>
+         admin/produits.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="admin/produits-inactifs.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Vue des produits inactifs
+        </strong>
+        <small>
+         admin/produits-inactifs.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="admin/produit-ajouter.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Formulaire de création
+        </strong>
+        <small>
+         admin/produit-ajouter.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="admin/produits-modifier/01.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Formulaire de modification
+        </strong>
+        <small>
+         admin/produits-modifier/01.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="admin/commandes.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Commandes en tableau
+        </strong>
+        <small>
+         admin/commandes.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="admin/commandes-cartes.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Commandes en cartes
+        </strong>
+        <small>
+         admin/commandes-cartes.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="admin/commandes/demo-001.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Détail d’une commande à traiter
+        </strong>
+        <small>
+         admin/commandes/demo-001.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="admin/statistiques.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Statistiques détaillées
+        </strong>
+        <small>
+         admin/statistiques.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="admin/preferences.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Préférences d’affichage
+        </strong>
+        <small>
+         admin/preferences.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+     </div>
+    </section>
+    <section class="mt">
+     <div class="section-heading">
+      <div>
+       <p class="overline">
+        PARCOURS 04
+       </p>
+       <h2>
+        Les composants à extraire
+       </h2>
+      </div>
+      <span class="small muted">
+       5 écrans de référence
+      </span>
+     </div>
+     <div class="screen-grid">
+      <a class="screen-link" href="exemples/composants.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Boutons, badges, cartes, slots et notifications
+        </strong>
+        <small>
+         exemples/composants.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/modales.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Trois confirmations et un état pending
+        </strong>
+        <small>
+         exemples/modales.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/tiroir-panier.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Aperçu du panier latéral
+        </strong>
+        <small>
+         exemples/tiroir-panier.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/recherche.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Fenêtre de recherche
+        </strong>
+        <small>
+         exemples/recherche.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/theme-sombre.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         La boutique en thème sombre
+        </strong>
+        <small>
+         exemples/theme-sombre.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+     </div>
+    </section>
+    <section class="mt">
+     <div class="section-heading">
+      <div>
+       <p class="overline">
+        PARCOURS 05
+       </p>
+       <h2>
+        Les états à ne pas oublier
+       </h2>
+      </div>
+      <span class="small muted">
+       17 écrans de référence
+      </span>
+     </div>
+     <div class="screen-grid">
+      <a class="screen-link" href="exemples/panier-vide.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Panier vide
+        </strong>
+        <small>
+         exemples/panier-vide.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/catalogue-vide.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Aucun résultat après filtrage
+        </strong>
+        <small>
+         exemples/catalogue-vide.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/chargement.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Chargement de l’API
+        </strong>
+        <small>
+         exemples/chargement.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/erreur-api.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Échec de chargement
+        </strong>
+        <small>
+         exemples/erreur-api.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/formulaire-erreurs.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Erreurs de validation client
+        </strong>
+        <small>
+         exemples/formulaire-erreurs.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/produit-erreurs.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Erreurs de validation produit
+        </strong>
+        <small>
+         exemples/produit-erreurs.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/code-invalide.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Code promotionnel refusé
+        </strong>
+        <small>
+         exemples/code-invalide.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/prix-modifie.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Prix changé : reconfirmation requise
+        </strong>
+        <small>
+         exemples/prix-modifie.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/stock-insuffisant.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Quantité devenue indisponible
+        </strong>
+        <small>
+         exemples/stock-insuffisant.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/commande-echec.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Échec d’enregistrement
+        </strong>
+        <small>
+         exemples/commande-echec.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/suivi-prete.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Commande prête
+        </strong>
+        <small>
+         exemples/suivi-prete.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/suivi-annulee.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Commande annulée
+        </strong>
+        <small>
+         exemples/suivi-annulee.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/suivi-introuvable.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Référence introuvable
+        </strong>
+        <small>
+         exemples/suivi-introuvable.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/produit-introuvable.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Produit introuvable
+        </strong>
+        <small>
+         exemples/produit-introuvable.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/module-chargement.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Module asynchrone en chargement
+        </strong>
+        <small>
+         exemples/module-chargement.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="exemples/module-erreur.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Module asynchrone en erreur
+        </strong>
+        <small>
+         exemples/module-erreur.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="screen-link" href="404.html">
+       <span class="screen-icon">
+        <svg aria-hidden="true" class="icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="22">
+         <path d="M14 2H5v20h14V7l-5-5Zm0 0v5h5M8 12h8M8 16h6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <strong>
+         Page introuvable
+        </strong>
+        <small>
+         404.html
+        </small>
+       </span>
+       <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+     </div>
+    </section>
+    <details class="panel mt">
+     <summary>
+      Les 19 fiches produits du catalogue
+     </summary>
+     <div class="screen-grid mt">
+      <a class="chip" href="produits/01-riz.html">
+       Riz brisé parfumé
+      </a>
+      <a class="chip" href="produits/02-oignons.html">
+       Oignons de Potou
+      </a>
+      <a class="chip" href="produits/03-mil.html">
+       Mil local
+      </a>
+      <a class="chip" href="produits/04-fonio.html">
+       Fonio précuit
+      </a>
+      <a class="chip" href="produits/05-mais.html">
+       Maïs en grains
+      </a>
+      <a class="chip" href="produits/06-tomates.html">
+       Tomates fraîches
+      </a>
+      <a class="chip" href="produits/07-carottes.html">
+       Carottes
+      </a>
+      <a class="chip" href="produits/08-gombo.html">
+       Gombo frais
+      </a>
+      <a class="chip" href="produits/09-huile.html">
+       Huile d’arachide
+      </a>
+      <a class="chip" href="produits/10-sucre.html">
+       Sucre en poudre
+      </a>
+      <a class="chip" href="produits/11-sel.html">
+       Sel iodé
+      </a>
+      <a class="chip" href="produits/12-pate-arachide.html">
+       Pâte d’arachide
+      </a>
+      <a class="chip" href="produits/13-thiof.html">
+       Thiof
+      </a>
+      <a class="chip" href="produits/14-sardinelles.html">
+       Sardinelles
+      </a>
+      <a class="chip" href="produits/15-crevettes.html">
+       Crevettes
+      </a>
+      <a class="chip" href="produits/16-poisson-fume.html">
+       Poisson fumé
+      </a>
+      <a class="chip" href="produits/17-bissap.html">
+       Bissap séché
+      </a>
+      <a class="chip" href="produits/18-bouye.html">
+       Bouye en poudre
+      </a>
+      <a class="chip" href="produits/19-cafe-touba.html">
+       Café Touba
+      </a>
+     </div>
+    </details>
+    <details class="panel mt">
+     <summary>
+      Les 20 formulaires de modification
+     </summary>
+     <div class="screen-grid mt">
+      <a class="chip" href="admin/produits-modifier/01.html">
+       Riz brisé parfumé
+      </a>
+      <a class="chip" href="admin/produits-modifier/02.html">
+       Oignons de Potou
+      </a>
+      <a class="chip" href="admin/produits-modifier/03.html">
+       Mil local
+      </a>
+      <a class="chip" href="admin/produits-modifier/04.html">
+       Fonio précuit
+      </a>
+      <a class="chip" href="admin/produits-modifier/05.html">
+       Maïs en grains
+      </a>
+      <a class="chip" href="admin/produits-modifier/06.html">
+       Tomates fraîches
+      </a>
+      <a class="chip" href="admin/produits-modifier/07.html">
+       Carottes
+      </a>
+      <a class="chip" href="admin/produits-modifier/08.html">
+       Gombo frais
+      </a>
+      <a class="chip" href="admin/produits-modifier/09.html">
+       Huile d’arachide
+      </a>
+      <a class="chip" href="admin/produits-modifier/10.html">
+       Sucre en poudre
+      </a>
+      <a class="chip" href="admin/produits-modifier/11.html">
+       Sel iodé
+      </a>
+      <a class="chip" href="admin/produits-modifier/12.html">
+       Pâte d’arachide
+      </a>
+      <a class="chip" href="admin/produits-modifier/13.html">
+       Thiof
+      </a>
+      <a class="chip" href="admin/produits-modifier/14.html">
+       Sardinelles
+      </a>
+      <a class="chip" href="admin/produits-modifier/15.html">
+       Crevettes
+      </a>
+      <a class="chip" href="admin/produits-modifier/16.html">
+       Poisson fumé
+      </a>
+      <a class="chip" href="admin/produits-modifier/17.html">
+       Bissap séché
+      </a>
+      <a class="chip" href="admin/produits-modifier/18.html">
+       Bouye en poudre
+      </a>
+      <a class="chip" href="admin/produits-modifier/19.html">
+       Café Touba
+      </a>
+      <a class="chip" href="admin/produits-modifier/20.html">
+       Madd en conserve
+      </a>
+     </div>
+    </details>
+    <details class="panel mt">
+     <summary>
+      Les 10 commandes de démonstration
+     </summary>
+     <div class="screen-grid mt">
+      <a class="chip" href="admin/commandes/demo-001.html">
+       TM-DEMO-001 · En attente
+      </a>
+      <a class="chip" href="admin/commandes/demo-002.html">
+       TM-DEMO-002 · Confirmée
+      </a>
+      <a class="chip" href="admin/commandes/demo-003.html">
+       TM-DEMO-003 · En préparation
+      </a>
+      <a class="chip" href="admin/commandes/demo-004.html">
+       TM-DEMO-004 · Prête
+      </a>
+      <a class="chip" href="admin/commandes/demo-005.html">
+       TM-DEMO-005 · Terminée
+      </a>
+      <a class="chip" href="admin/commandes/demo-006.html">
+       TM-DEMO-006 · Annulée
+      </a>
+      <a class="chip" href="admin/commandes/demo-007.html">
+       TM-DEMO-007 · Terminée
+      </a>
+      <a class="chip" href="admin/commandes/demo-008.html">
+       TM-DEMO-008 · En attente
+      </a>
+      <a class="chip" href="admin/commandes/demo-009.html">
+       TM-DEMO-009 · Confirmée
+      </a>
+      <a class="chip" href="admin/commandes/demo-010.html">
+       TM-DEMO-010 · Terminée
+      </a>
+     </div>
+    </details>
+    <p class="template-note">
+     <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+      <path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18">
+      </path>
+     </svg>
+     <span>
+      Les données sont des exemples fixes. Les actions métier seront programmées par les étudiants.
+     </span>
+    </p>
+   </div>
+  </main>
+  <footer class="container site-footer" data-component="AppFooter">
+   <div>
+    <strong>
+     teranga
+     <span>
+      market.
+     </span>
+    </strong>
+    <p>
+     Une boutique de quartier. Toute la teranga.
+    </p>
+   </div>
+   <div class="footer-links">
+    <a href="sommaire.html">
+     Tous les écrans
+    </a>
+    <a href="guide.html">
+     Guide étudiant
+    </a>
+    <a href="exemples/composants.html">
+     Composants UI
+    </a>
+   </div>
+   <p>
+    Template HTML/CSS · Données fictives
+    <br/>
+    M. Aly Tall Niang · Projet Vue 3
+   </p>
+  </footer>
+  <!-- DEMANDE 06 — À PROGRAMMER : Extraire BaseDrawer : slots header/default/footer, prop open et événement close. Ce tiroir utilise uniquement la cible CSS. -->
+  <section aria-labelledby="drawer-title" class="static-overlay drawer-overlay" id="panier-apercu" role="dialog" tabindex="-1">
+   <a aria-label="Fermer le panier" class="overlay-dismiss" href="#page-top">
+   </a>
+   <div class="drawer-panel" data-component="BaseDrawer">
+    <header class="dialog-header">
+     <div>
+      <p class="overline">
+       VOTRE SÉLECTION
+      </p>
+      <h2 id="drawer-title">
+       Mon panier
+       <span class="small muted">
+        4 unités
+       </span>
+      </h2>
+     </div>
+     <a aria-label="Fermer le panier" class="icon-button" href="#page-top">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="m6 6 12 12M6 18 18 6">
+       </path>
+      </svg>
+     </a>
+    </header>
+    <div class="drawer-body">
+     <!-- DEMANDE 05 / 24 — À PROGRAMMER : Afficher les lignes du store panier ; boutons et quantités sans effet dans ce template. -->
+     <div class="cart-items">
+      <article class="cart-line" data-product-id="1">
+       <img alt="Riz brisé parfumé" height="70" src="assets/images/riz.svg" width="64"/>
+       <div class="cart-line-main">
+        <strong>
+         Riz brisé parfumé
+        </strong>
+        <small>
+         17 500 FCFA / sac de 25 kg
+        </small>
+        <div class="quantity" data-component="QuantityControl">
+         <button aria-label="Diminuer la quantité de Riz brisé parfumé" class="" data-action="diminuer-quantite" type="button">
+          −
+         </button>
+         <input aria-label="Quantité de Riz brisé parfumé" id="drawer-1" max="18" min="0" name="quantity" step="1" type="number" value="1"/>
+         <button aria-label="Augmenter la quantité de Riz brisé parfumé" class="" data-action="augmenter-quantite" type="button">
+          +
+         </button>
+        </div>
+       </div>
+       <div class="cart-line-end">
+        <button aria-label="Retirer Riz brisé parfumé" class="icon-button" data-action="retirer-produit" type="button">
+         <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+          <path d="m6 6 12 12M6 18 18 6">
+          </path>
+         </svg>
+        </button>
+        <strong>
+         17 500 FCFA
+        </strong>
+       </div>
+      </article>
+      <article class="cart-line" data-product-id="2">
+       <img alt="Oignons de Potou" height="70" src="assets/images/oignons.svg" width="64"/>
+       <div class="cart-line-main">
+        <strong>
+         Oignons de Potou
+        </strong>
+        <small>
+         700 FCFA / kg
+        </small>
+        <div class="quantity" data-component="QuantityControl">
+         <button aria-label="Diminuer la quantité de Oignons de Potou" class="" data-action="diminuer-quantite" type="button">
+          −
+         </button>
+         <input aria-label="Quantité de Oignons de Potou" id="drawer-2" max="4" min="0" name="quantity" step="1" type="number" value="2"/>
+         <button aria-label="Augmenter la quantité de Oignons de Potou" class="" data-action="augmenter-quantite" type="button">
+          +
+         </button>
+        </div>
+       </div>
+       <div class="cart-line-end">
+        <button aria-label="Retirer Oignons de Potou" class="icon-button" data-action="retirer-produit" type="button">
+         <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+          <path d="m6 6 12 12M6 18 18 6">
+          </path>
+         </svg>
+        </button>
+        <strong>
+         1 400 FCFA
+        </strong>
+       </div>
+      </article>
+      <article class="cart-line" data-product-id="17">
+       <img alt="Bissap séché" height="70" src="assets/images/bissap.svg" width="64"/>
+       <div class="cart-line-main">
+        <strong>
+         Bissap séché
+        </strong>
+        <small>
+         1 200 FCFA / sachet de 250 g
+        </small>
+        <div class="quantity" data-component="QuantityControl">
+         <button aria-label="Diminuer la quantité de Bissap séché" class="" data-action="diminuer-quantite" type="button">
+          −
+         </button>
+         <input aria-label="Quantité de Bissap séché" id="drawer-17" max="22" min="0" name="quantity" step="1" type="number" value="1"/>
+         <button aria-label="Augmenter la quantité de Bissap séché" class="" data-action="augmenter-quantite" type="button">
+          +
+         </button>
+        </div>
+       </div>
+       <div class="cart-line-end">
+        <button aria-label="Retirer Bissap séché" class="icon-button" data-action="retirer-produit" type="button">
+         <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+          <path d="m6 6 12 12M6 18 18 6">
+          </path>
+         </svg>
+        </button>
+        <strong>
+         1 200 FCFA
+        </strong>
+       </div>
+      </article>
+     </div>
+     <!-- DEMANDE 07 — À PROGRAMMER : Vérifier le code, son activité et son expiration ; ne pas cumuler fidélité et code. -->
+     <div class="promo-box" data-component="PromoCode">
+      <label for="drawer-promo-code">
+       Un petit avantage pour votre marché ?
+      </label>
+      <div class="input-action">
+       <input aria-describedby="drawer-promo-message" id="drawer-promo-code" name="promoCode" placeholder="Votre code promo" value="TERANGA10"/>
+       <button class="btn small-btn" data-action="appliquer-code" type="button">
+        Appliquer
+       </button>
+      </div>
+      <p class="code-success" id="drawer-promo-message">
+       <svg aria-hidden="true" class="icon" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="14">
+        <path d="m5 12 4 4L19 6">
+        </path>
+       </svg>
+       Code TERANGA10 appliqué : −10 %.
+      </p>
+      <small>
+       La meilleure remise est retenue. Les réductions ne se cumulent pas.
+      </small>
+     </div>
+     <!-- DEMANDE 05 / 07 / 09 — À PROGRAMMER : Remplacer ces montants fixes par des propriétés calculées, arrondies au FCFA. -->
+     <div class="totals" data-component="Totals">
+      <div>
+       <span>
+        Sous-total
+       </span>
+       <strong>
+        20 100 FCFA
+       </strong>
+      </div>
+      <div>
+       <span>
+        Réduction (10 %)
+       </span>
+       <strong class="success-text">
+        −2 010 FCFA
+       </strong>
+      </div>
+      <div class="total-row">
+       <span>
+        Total hors livraison
+       </span>
+       <strong>
+        18 090 FCFA
+       </strong>
+      </div>
+     </div>
+     <a class="text-button" href="panier.html">
+      Voir le panier en pleine page
+     </a>
+    </div>
+    <footer class="dialog-footer">
+     <a class="btn full" href="commande.html">
+      Passer ma commande
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M5 12h14m-5-5 5 5-5 5">
+       </path>
+      </svg>
+     </a>
+    </footer>
+   </div>
+  </section>
+  <!-- DEMANDE 18 — À PROGRAMMER : Extraire SearchDialog ; ouvrir/fermer avec Vue et appliquer v-focus après rendu. -->
+  <section aria-labelledby="search-dialog-title" class="static-overlay modal-overlay" id="recherche-apercu" role="dialog" tabindex="-1">
+   <a aria-label="Fermer la recherche" class="overlay-dismiss" href="#page-top">
+   </a>
+   <div class="modal-window search-dialog" data-component="SearchDialog">
+    <header class="dialog-header">
+     <h2 id="search-dialog-title">
+      Une envie particulière ?
+     </h2>
+     <a aria-label="Fermer" class="icon-button" href="#page-top">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="m6 6 12 12M6 18 18 6">
+       </path>
+      </svg>
+     </a>
+    </header>
+    <div class="modal-body">
+     <label class="field" for="quick-search">
+      Rechercher un produit
+     </label>
+     <div class="input-action mt">
+      <input data-focus-target="search" id="quick-search" placeholder="Riz, bissap, légumes…" type="search"/>
+      <button class="btn" data-action="rechercher-produit" type="button">
+       <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+        <path d="m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0">
+        </path>
+       </svg>
+       Rechercher
+      </button>
+     </div>
+     <p class="muted small mt">
+      Le focus automatique et la recherche sont à programmer.
+     </p>
+     <div class="suggestions">
+      <a class="chip" href="categories/cereales.html">
+       Céréales
+      </a>
+      <a class="chip" href="categories/legumes.html">
+       Légumes
+      </a>
+      <a class="chip" href="categories/saveurs-locales.html">
+       Saveurs locales
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+ </body>
+</html>

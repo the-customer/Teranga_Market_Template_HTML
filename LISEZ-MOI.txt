@@ -1,0 +1,11 @@
+TERANGA MARKET — TEMPLATE HTML / CSS
+
+1. Extraire toute l’archive.
+2. Ouvrir index.html pour la boutique.
+3. Ouvrir sommaire.html pour les écrans.
+4. Ouvrir guide.html pour les 24 demandes.
+
+Aucun JavaScript fourni : les étudiants programment tous les comportements.
+Aucune installation nécessaire.
+
+M. Aly Tall Niang

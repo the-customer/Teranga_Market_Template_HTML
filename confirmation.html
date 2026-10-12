@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Merci pour votre commande — maquette pédagogique Teranga Market, HTML et CSS sans JavaScript." name="description"/>
+  <title>
+   Merci pour votre commande | Teranga Market
+  </title>
+  <link href="assets/logo.svg" rel="icon" type="image/svg+xml"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+  <link href="assets/css/template.css" rel="stylesheet"/>
+ </head>
+ <body data-page="confirmation.html" id="page-top">
+  <!--
+ TERANGA MARKET — TEMPLATE ÉTUDIANT — M. Aly Tall Niang
+ Demandes associées : 08, 10
+ Aucune bibliothèque et aucun JavaScript n'est chargé.
+ Les liens servent à visiter les maquettes. Les boutons data-action restent à programmer.
+ Les commentaires DEMANDE et data-component indiquent les futurs composants Vue.
+-->
+  <!-- DEMANDE 01 / 06 / 11 — À PROGRAMMER : Extraire AppHeader dans le layout. Remplacer les liens HTML par la navigation Vue Router. -->
+  <a class="skip-link" href="#main-content">
+   Aller au contenu
+  </a>
+  <div class="topbar">
+   Le marché du quartier, à votre rythme.
+   <span>
+    Castors · Dakar · Démonstration
+   </span>
+  </div>
+  <header class="site-header" data-component="AppHeader">
+   <div class="container header-inner">
+    <a aria-label="Teranga Market — Accueil" class="brand" href="index.html">
+     <img alt="" height="42" src="assets/logo.svg" width="42"/>
+     <span>
+      teranga
+      <b>
+       market.
+      </b>
+     </span>
+    </a>
+    <nav aria-label="Navigation principale">
+     <a href="boutique.html">
+      Le marché
+     </a>
+     <a href="suivre.html">
+      Suivre ma commande
+     </a>
+     <a href="admin/index.html">
+      Espace Awa
+     </a>
+    </nav>
+    <div class="header-actions">
+     <a aria-label="Aperçu de la recherche" class="icon-button" href="#recherche-apercu">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0">
+       </path>
+      </svg>
+     </a>
+     <a aria-label="Voir la variante de thème" class="icon-button" href="exemples/theme-sombre.html">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M21 13A9 9 0 0 1 11 3a9 9 0 1 0 10 10Z">
+       </path>
+      </svg>
+     </a>
+     <a aria-label="Aperçu du panier, 0 unité" class="btn small-btn" href="#panier-apercu">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M6 7h12l2 14H4L6 7Zm3 0V5a3 3 0 0 1 6 0v2">
+       </path>
+      </svg>
+      <span>
+       Mon panier
+      </span>
+      <b class="cart-count">
+       0
+      </b>
+     </a>
+    </div>
+   </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+   <div class="container narrow page-space">
+    <section class="confirmation-hero">
+     <span class="success-circle">
+      <svg aria-hidden="true" class="icon" fill="none" height="35" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="35">
+       <path d="m5 12 4 4L19 6">
+       </path>
+      </svg>
+     </span>
+     <p class="overline">
+      MERCI POUR VOTRE CONFIANCE
+     </p>
+     <h1>
+      Votre marché est entre de bonnes mains.
+     </h1>
+     <p class="muted">
+      Bonjour Fatou. Voici l’exemple d’une commande enregistrée chez Awa.
+     </p>
+     <span class="reference reference-ticket">
+      TM-DEMO-001
+     </span>
+     <p class="small muted">
+      Aperçu de confirmation : aucun enregistrement n’a eu lieu.
+     </p>
+     <div class="button-row centered">
+      <a class="btn" href="suivi-commande.html">
+       Suivre ma commande
+       <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+        <path d="M5 12h14m-5-5 5 5-5 5">
+        </path>
+       </svg>
+      </a>
+      <a class="btn secondary" href="boutique.html">
+       Retour au marché
+      </a>
+     </div>
+    </section>
+    <div class="info-grid mb">
+     <div class="panel compact-info">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M2 5h12v12H2V5Zm12 5h4l4 4v3h-8M8 18a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0">
+       </path>
+      </svg>
+      <strong>
+       Livraison à Ouakam
+      </strong>
+      <span>
+       Rue de démonstration, porte 12
+      </span>
+     </div>
+     <div class="panel compact-info">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="M12 8v5l3 2M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0">
+       </path>
+      </svg>
+      <strong>
+       En attente de confirmation
+      </strong>
+      <span>
+       Awa doit prendre en charge la commande.
+      </span>
+     </div>
+    </div>
+    <section class="panel order-summary" data-component="OrderSummary">
+     <p class="overline">
+      EN TOUTE TRANSPARENCE
+     </p>
+     <h2>
+      Votre récapitulatif
+     </h2>
+     <div class="summary-line">
+      <span>
+       1 × Riz brisé parfumé
+      </span>
+      <strong>
+       17 500 FCFA
+      </strong>
+     </div>
+     <div class="summary-line">
+      <span>
+       2 × Oignons de Potou
+      </span>
+      <strong>
+       1 400 FCFA
+      </strong>
+     </div>
+     <div class="summary-line">
+      <span>
+       1 × Bissap séché
+      </span>
+      <strong>
+       1 200 FCFA
+      </strong>
+     </div>
+     <!-- DEMANDE 05 / 07 / 09 — À PROGRAMMER : Remplacer ces montants fixes par des propriétés calculées, arrondies au FCFA. -->
+     <div class="totals" data-component="Totals">
+      <div>
+       <span>
+        Sous-total
+       </span>
+       <strong>
+        20 100 FCFA
+       </strong>
+      </div>
+      <div>
+       <span>
+        Réduction (10 %)
+       </span>
+       <strong class="success-text">
+        −2 010 FCFA
+       </strong>
+      </div>
+      <div>
+       <span>
+        Livraison
+       </span>
+       <strong>
+        2 000 FCFA
+       </strong>
+      </div>
+      <div class="total-row">
+       <span>
+        Total à payer
+       </span>
+       <strong>
+        20 090 FCFA
+       </strong>
+      </div>
+     </div>
+     <p class="muted small">
+      Paiement à la remise. Aucun paiement réel dans ce projet.
+     </p>
+    </section>
+    <p class="template-note">
+     <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16">
+      <path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18">
+      </path>
+     </svg>
+     <span>
+      Les données sont des exemples fixes. Les actions métier seront programmées par les étudiants.
+     </span>
+    </p>
+   </div>
+  </main>
+  <footer class="container site-footer" data-component="AppFooter">
+   <div>
+    <strong>
+     teranga
+     <span>
+      market.
+     </span>
+    </strong>
+    <p>
+     Une boutique de quartier. Toute la teranga.
+    </p>
+   </div>
+   <div class="footer-links">
+    <a href="sommaire.html">
+     Tous les écrans
+    </a>
+    <a href="guide.html">
+     Guide étudiant
+    </a>
+    <a href="exemples/composants.html">
+     Composants UI
+    </a>
+   </div>
+   <p>
+    Template HTML/CSS · Données fictives
+    <br/>
+    M. Aly Tall Niang · Projet Vue 3
+   </p>
+  </footer>
+  <!-- DEMANDE 06 — À PROGRAMMER : Extraire BaseDrawer : slots header/default/footer, prop open et événement close. Ce tiroir utilise uniquement la cible CSS. -->
+  <section aria-labelledby="drawer-title" class="static-overlay drawer-overlay" id="panier-apercu" role="dialog" tabindex="-1">
+   <a aria-label="Fermer le panier" class="overlay-dismiss" href="#page-top">
+   </a>
+   <div class="drawer-panel" data-component="BaseDrawer">
+    <header class="dialog-header">
+     <div>
+      <p class="overline">
+       VOTRE SÉLECTION
+      </p>
+      <h2 id="drawer-title">
+       Mon panier
+       <span class="small muted">
+        0 unité
+       </span>
+      </h2>
+     </div>
+     <a aria-label="Fermer le panier" class="icon-button" href="#page-top">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="m6 6 12 12M6 18 18 6">
+       </path>
+      </svg>
+     </a>
+    </header>
+    <div class="drawer-body">
+     <section class="state">
+      <h3>
+       Votre panier attend ses saveurs.
+      </h3>
+      <p>
+       Ajoutez vos premiers produits depuis le marché.
+      </p>
+     </section>
+    </div>
+    <footer class="dialog-footer">
+     <a class="btn full" href="boutique.html">
+      Faire mon marché
+     </a>
+    </footer>
+   </div>
+  </section>
+  <!-- DEMANDE 18 — À PROGRAMMER : Extraire SearchDialog ; ouvrir/fermer avec Vue et appliquer v-focus après rendu. -->
+  <section aria-labelledby="search-dialog-title" class="static-overlay modal-overlay" id="recherche-apercu" role="dialog" tabindex="-1">
+   <a aria-label="Fermer la recherche" class="overlay-dismiss" href="#page-top">
+   </a>
+   <div class="modal-window search-dialog" data-component="SearchDialog">
+    <header class="dialog-header">
+     <h2 id="search-dialog-title">
+      Une envie particulière ?
+     </h2>
+     <a aria-label="Fermer" class="icon-button" href="#page-top">
+      <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+       <path d="m6 6 12 12M6 18 18 6">
+       </path>
+      </svg>
+     </a>
+    </header>
+    <div class="modal-body">
+     <label class="field" for="quick-search">
+      Rechercher un produit
+     </label>
+     <div class="input-action mt">
+      <input data-focus-target="search" id="quick-search" placeholder="Riz, bissap, légumes…" type="search"/>
+      <button class="btn" data-action="rechercher-produit" type="button">
+       <svg aria-hidden="true" class="icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20">
+        <path d="m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0">
+        </path>
+       </svg>
+       Rechercher
+      </button>
+     </div>
+     <p class="muted small mt">
+      Le focus automatique et la recherche sont à programmer.
+     </p>
+     <div class="suggestions">
+      <a class="chip" href="categories/cereales.html">
+       Céréales
+      </a>
+      <a class="chip" href="categories/legumes.html">
+       Légumes
+      </a>
+      <a class="chip" href="categories/saveurs-locales.html">
+       Saveurs locales
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+ </body>
+</html>
