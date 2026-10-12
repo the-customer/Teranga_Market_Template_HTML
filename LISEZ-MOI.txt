@@ -8,4 +8,5 @@ TERANGA MARKET — TEMPLATE HTML / CSS
 Aucun JavaScript fourni : les étudiants programment tous les comportements.
 Aucune installation nécessaire.
 
+.................
 M. Aly Tall Niang
